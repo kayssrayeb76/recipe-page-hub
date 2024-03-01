@@ -1,0 +1,141 @@
+/* start main styles */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+:root {
+  --nutmeg: hsl(14, 45%, 36%);
+  --dark-respberry: hsl(332, 51%, 32%);
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --egg-shell: hsl(30, 54%, 90%);
+  --light-gray: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+  --outfit-font: 'Outfit';
+  --young-serif-font: 'Young Serif', serif;
+}
+
+p {
+  font-size: 16px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--outfit-font);
+  padding: 50px 100px;
+  background-color: var(--egg-shell);
+}
+
+.container {
+  width: 70%;
+  padding-left: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* end main styles */
+
+.main_content {
+  padding: 50px;
+  background-color: white;
+  border-radius: 25px;
+  position: relative;
+  .image img {
+    max-width: 820px; 
+    border-radius: 30px;
+    margin-bottom: 20px;
+  }
+  > h1 {
+    font-family: var(--young-serif-font);
+  }
+  p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .prepa{
+    font-family: var(--outfit-font);
+    background-color: var(--rose-white);
+    padding: 20px;
+    margin-bottom: 20px;
+    h2 {
+      color: var(--dark-respberry);
+      padding: 10px;
+    }
+    ul {
+      padding-left: 50px;
+      li b {
+        color: var(--dark-charcoal);
+      }
+    }
+  }
+  .ingredinets {
+    > h1 {
+      color: var(--nutmeg);
+      font-family: var(--young-serif-font);
+      letter-spacing: 1px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    ul {
+      padding-left: 50px;
+    }
+  }
+  hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--nutmeg);
+  }
+  .instructions {
+    > h1 {
+      color: var(--nutmeg);
+      font-family: var(--young-serif-font);
+      letter-spacing: 1px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    ol {
+      padding-left: 50px;
+      margin-bottom: 20px;
+      li b {
+        color: var(--wenge-brown);
+      }
+    }
+  }
+  .nutrution {
+    > h1 {
+      color: var(--nutmeg);
+      font-family: var(--young-serif-font);
+      letter-spacing: 1px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      tr {
+        text-align: left;
+        border-bottom: 1px solid #000;
+        td {
+          padding: 12px 15px;
+          width: 50%;
+          margin: 0;
+        }
+      }
+      tr:not(:last-child) {
+        td {
+          border-bottom: 1px solid var(--wenge-brown);
+        }
+      }
+    }
+  }
+}
